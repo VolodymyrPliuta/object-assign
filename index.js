@@ -11,6 +11,6 @@ const additionState = {
 }
 
 //const newState = Object.assign({}, defaultState, additionState)
-const newState = {...defaultState, ...additionState}
+const newState = {...defaultState, ...additionState, friends: 700}
 
 console.log(newState)
