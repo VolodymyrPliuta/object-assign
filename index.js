@@ -6,9 +6,11 @@ const defaultState = {
 };
 
 const additionState = {
-  user: 'Vladimir'
+  user: 'Vladimir',
+  status: 'online'
 }
 
-const newState = Object.assign({}, defaultState, additionState)
+//const newState = Object.assign({}, defaultState, additionState)
+const newState = {...defaultState, ...additionState}
 
 console.log(newState)
